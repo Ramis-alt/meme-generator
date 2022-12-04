@@ -1,13 +1,139 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+  padding: 36px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 30px 25px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+.img--edit {
+  height: 70px;
+  margin-right: 10px;
+  padding-left: 5px;
+}
+
+.title--edit, .course--info {
+  margin: 0;
+}
+
+.title--edit {
+  margin-right: auto;
+  color: white;
+  font-weight: 700;
+  font-size: 1.375rem;
+}
+
+.course--info {
+  margin-right: 10px;
+  color: white;
+}
+
+.edit--form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr; /*The column width for each input is 40px. fr=fraction units*/
+  gap: 17px;
+}
+
+.input--edit {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px; /*text-indent gives the placeholder and user input text and indentation to the left*/
+}
+
+.button--edit {
+  grid-column: 1 / -1; /*Means the button will go from end to end*/
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+  border: none;
+  cursor: pointer; /*changes the curson to the small hand when hovered over the button*/
+}
+
+.image--edit {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+
+}
+
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.meme {
+  position: relative;
+}
+
+.meme--image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
